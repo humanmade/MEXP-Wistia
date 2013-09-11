@@ -48,7 +48,7 @@ add_filter( 'mexp_services', 'mexp_service_wistia' );
 function mexp_wistia_developer_key_callback() {
 
 	// Get your developer key at: <https://yourname.wistia.com/account>
-	return 'yourapikey';
+	return '';
 
 }
 add_filter( 'mexp_wistia_developer_key', 'mexp_wistia_developer_key_callback' );
@@ -58,6 +58,6 @@ add_filter( 'mexp_wistia_developer_key', 'mexp_wistia_developer_key_callback' );
  */
 function mexp_wistia_username_callback() {
 
-	return 'yourusername';
+	return '';
 }
 add_filter( 'mexp_username', 'mexp_wistia_username_callback' );
