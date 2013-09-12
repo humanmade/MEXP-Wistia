@@ -26,6 +26,12 @@ require_once 'service.php';
 
 require_once 'template.php';
 
+add_action( 'wp_loaded', 'plugin_init' );
+
+function plugin_init() {
+	wp_oembed_add_provider( '/https?:\/\/(.+)?(wistia.com|wi.st)\/(medias|embed)\/.*/', 'http://fast.wistia.com/oembed', true );
+}
+
 /**
  * Extends the MEXP plugin to add Wistia
  *

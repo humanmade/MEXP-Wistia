@@ -82,7 +82,7 @@ class MEXP_Wistia_Service extends MEXP_Service {
 
 			$username = (string) apply_filters( 'mexp_username', '' ) ;
 
-			$item->set_url( esc_url_raw( 'http://' . $username . '.wistia.com/medias/' . $search_item['hashed_id'] . '?embedType=iframe&videoWidth=640' ) );
+			$item->set_url( esc_url_raw( 'http://' . $username . '.wistia.com/medias/' . $search_item['hashed_id'] . '?embedType=iframe&amp;videoWidth=640' ) );
 
 			$item->set_id( (int) $search_item['id'] );
 
